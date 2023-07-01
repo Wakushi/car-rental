@@ -1,0 +1,118 @@
+@import "./variables.scss";
+
+/* 
+====================
+  CSS RESET
+====================
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+	list-style: none;
+}
+
+/* 
+====================
+  TYPOGRAPHY
+====================
+*/
+
+h1 {
+	font-size: 3.25rem;
+	line-height: 1.4;
+}
+
+h4 {
+	font-size: 1.375rem;
+}
+
+.description-text {
+	color: $light-color;
+}
+
+/* 
+====================
+  MODIFIER CLASSES
+====================
+*/
+
+.flex,
+.flex--center,
+.flex--around,
+.flex--between,
+.flex--column {
+	display: flex;
+	align-items: center;
+}
+
+.flex--center {
+	justify-content: center;
+}
+
+.flex--between {
+	justify-content: space-between;
+}
+
+.flex--around {
+	justify-content: space-around;
+}
+
+.flex--column {
+	flex-direction: column;
+}
+
+.brand--color {
+	color: $primary-color;
+}
+
+.basic-btn {
+	color: white;
+	background-color: $primary-color;
+	border: 2px solid $primary-color;
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 0.8rem 1.5rem;
+	border-radius: 0.2rem;
+	box-shadow: 0px 10px 15px 0 $primary-shadow;
+	transition: 0.3s;
+	cursor: pointer;
+	&:hover,
+	&:focus {
+		color: white;
+		box-shadow: 0px 15px 20px 0 $primary-shadow;
+	}
+
+	&.basic-btn--dark {
+		border: 2px solid $dark-color;
+		background-color: $dark-color;
+		box-shadow: none;
+		&:hover,
+		&:focus {
+			color: $dark-color;
+			background-color: white;
+		}
+	}
+}
+
+.btn-group {
+	display: flex;
+	gap: 1rem;
+}

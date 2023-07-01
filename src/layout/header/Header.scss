@@ -1,0 +1,90 @@
+@import "../../variables.scss";
+
+header {
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: "Roboto", sans-serif;
+	max-width: calc($max-width + 3rem);
+	padding: 1.5rem;
+	transition: 2s;
+	.header__logo {
+		cursor: pointer;
+		.logo-container {
+			height: 60px;
+		}
+	}
+
+	.fa-bars {
+		font-size: 2rem;
+		&:hover,
+		&:focus {
+			color: $primary-color;
+		}
+
+		@media (width > 1000px) {
+			display: none;
+		}
+	}
+
+	.header__nav__link {
+		font-weight: 500;
+		transition: 0.3s;
+		&:hover:not(.basic-btn),
+		&:focus:not(.basic-btn) {
+			color: $primary-color;
+		}
+
+		&.hover-to-white {
+			&:hover,
+			&:focus {
+				color: white;
+			}
+		}
+	}
+
+	.header__nav {
+		display: none;
+
+		@media (width > 1000px) {
+			display: block;
+		}
+		ul {
+			gap: 1.2rem;
+		}
+	}
+
+	.header__mobile-nav {
+		position: absolute;
+		top: 0;
+		left: -100%;
+		background-color: white;
+		width: 100%;
+		height: 100vh;
+		transition: 0.7s;
+		transform: translateX(100%);
+
+		.fa-xmark {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			font-size: 2rem;
+			&:hover,
+			&:focus {
+				color: $primary-color;
+			}
+		}
+
+		ul {
+			gap: 1rem;
+			font-size: 1.4rem;
+
+			.btn-group {
+				margin-top: 4rem;
+			}
+		}
+	}
+}
+
