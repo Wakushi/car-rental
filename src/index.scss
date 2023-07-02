@@ -37,7 +37,20 @@ li {
 
 h1 {
 	font-size: 3.25rem;
-	line-height: 1.4;
+	line-height: 1;
+
+	@media (width > 450px) {
+		line-height: 1.4;
+	}
+}
+
+h2 {
+	font-size: 2.6rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: 500;
 }
 
 h4 {
@@ -46,6 +59,10 @@ h4 {
 
 .description-text {
 	color: $light-color;
+}
+
+.bold-text {
+	font-weight: 700;
 }
 
 /* 
@@ -83,6 +100,10 @@ h4 {
 	color: $primary-color;
 }
 
+.container--padding {
+	padding: 0 1.5rem;
+}
+
 .basic-btn {
 	color: white;
 	background-color: $primary-color;
@@ -91,7 +112,7 @@ h4 {
 	font-weight: 600;
 	padding: 0.8rem 1.5rem;
 	border-radius: 0.2rem;
-	box-shadow: 0px 10px 15px 0 $primary-shadow;
+	box-shadow: 0px 5px 15px 0 $primary-shadow;
 	transition: 0.3s;
 	cursor: pointer;
 	&:hover,
@@ -114,5 +135,12 @@ h4 {
 
 .btn-group {
 	display: flex;
+	flex-direction: column;
+	width: 100%;
 	gap: 1rem;
+
+	@media (width > 450px) {
+		flex-direction: row;
+		width: initial;
+	}
 }

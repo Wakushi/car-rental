@@ -6,7 +6,7 @@ export default function Header() {
 	const [showSideNav, setShowSideNav] = useState(false)
 
 	function toggleSideNav(): void {
-		setShowSideNav((prevSideNav) => (prevSideNav = !prevSideNav))
+		setShowSideNav((prevSideNav: boolean) => (prevSideNav = !prevSideNav))
 	}
 
 	const navStyle = {
@@ -105,7 +105,10 @@ export default function Header() {
 			<nav className="header__nav">
 				<ul className="flex--between">
 					<li>
-						<a href="#" className="hover-to-white">
+						<a
+							href="#"
+							className="header__nav__link hover-to-white"
+						>
 							Sign In
 						</a>
 					</li>

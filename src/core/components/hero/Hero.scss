@@ -1,0 +1,36 @@
+@import "../../../variables.scss";
+
+.hero {
+	z-index: 2;
+	width: 100%;
+	max-width: $max-width;
+	height: 100dvh;
+
+	.hero__content {
+		.hero__content__text {
+			text-align: center;
+			gap: 1.2rem;
+			max-width: 500px;
+
+			button {
+				gap: 0.7rem;
+			}
+
+			@media (width > 800px) {
+				align-items: flex-start;
+				text-align: left;
+
+				h1 {
+					min-width: 500px;
+				}
+			}
+		}
+		.hero__content__img-container {
+			display: none;
+
+			@media (width > 800px) {
+				display: block;
+			}
+		}
+	}
+}

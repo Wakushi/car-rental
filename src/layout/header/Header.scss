@@ -7,7 +7,7 @@ header {
 	left: 50%;
 	transform: translateX(-50%);
 	font-family: "Roboto", sans-serif;
-	max-width: calc($max-width + 3rem);
+	max-width: calc($max-width + 1rem);
 	padding: 1.5rem;
 	transition: 2s;
 	.header__logo {
@@ -26,22 +26,6 @@ header {
 
 		@media (width > 1000px) {
 			display: none;
-		}
-	}
-
-	.header__nav__link {
-		font-weight: 500;
-		transition: 0.3s;
-		&:hover:not(.basic-btn),
-		&:focus:not(.basic-btn) {
-			color: $primary-color;
-		}
-
-		&.hover-to-white {
-			&:hover,
-			&:focus {
-				color: white;
-			}
 		}
 	}
 
@@ -66,6 +50,10 @@ header {
 		transition: 0.7s;
 		transform: translateX(100%);
 
+		@media (width > 1000px) {
+			display: none;
+		}
+
 		.fa-xmark {
 			position: absolute;
 			top: 20px;
@@ -86,5 +74,20 @@ header {
 			}
 		}
 	}
-}
 
+	.header__nav__link {
+		font-weight: 500;
+		transition: 0.3s;
+		&:hover:not(.basic-btn),
+		&:focus:not(.basic-btn) {
+			color: $primary-color;
+		}
+
+		&.hover-to-white {
+			&:hover,
+			&:focus {
+				color: white;
+			}
+		}
+	}
+}

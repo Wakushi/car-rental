@@ -1,101 +1,65 @@
+// STYLES
 import "./Home.scss"
+// COMPONENTS
+import BookingForm from "../../shared/components/booking-form/BookingForm"
+import Hero from "../../core/components/hero/Hero"
+// ASSETS
 import heroBackground from "../../assets/images/blob.png"
-import blueCar from "../../assets/images/blue-car.png"
+import selectCarBlob from "../../assets/images/plan-blob1.png"
+import operatorBlob from "../../assets/images/plan-blob2.png"
+import movingCarBlob from "../../assets/images/plan-blob3.png"
 
 export default function HomePage() {
-	// return (
-	// 	<div className="home-container flex--column">
-	// 		<div className="home__bg-img-container">
-	// 			<img
-	// 				src={heroBackground}
-	// 				alt="A blue blob with a city drawing"
-	// 			/>
-	// 		</div>
-	// 		<div className="hero flex--center">
-	// 			<div className="hero__content flex">
-	// 				<div className="hero__content__text flex--column">
-	// 					<h4>Plan your trip now</h4>
-	// 					<h1>
-	// 						Save <span className="brand--color">big</span> with
-	// 						our car rental
-	// 					</h1>
-	// 					<p className="description-text">
-	// 						Rent the car of your dreams. Unbeatable prices,
-	// 						unlimited miles, flexible pick-up options and much
-	// 						more.
-	// 					</p>
-	// 					<div className="btn-group">
-	// 						<button className="basic-btn">Book Ride</button>
-	// 						<button className="basic-btn basic-btn--dark">
-	// 							Learn more
-	// 						</button>
-	// 					</div>
-	// 				</div>
-	// 				<div className="hero__content__img-container">
-	// 					<img src={blueCar} alt="A blue car" />
-	// 				</div>
-	// 			</div>
-	// 		</div>
-	// 		<section className="booking">
-	// 			<h2>Book a car</h2>
-	// 			<form className="booking__form flex">
-	// 				<div className="booking__form__bloc flex--column">
-	// 					<label htmlFor="carType">
-	// 						Select your car type{" "}
-	// 						<span className="brand--color">*</span>
-	// 					</label>
-	// 					<select id="carType">
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 					</select>
-	// 				</div>
-	// 				<div className="booking__form__bloc flex--column">
-	// 					<label htmlFor="pickUpLocation">
-	// 						Pick-up location{" "}
-	// 						<span className="brand--color">*</span>
-	// 					</label>
-	// 					<select id="pickUpLocation">
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 					</select>
-	// 				</div>
-	// 				<div className="booking__form__bloc flex--column">
-	// 					<label htmlFor="dropOffLocation">
-	// 						Drop-off location{" "}
-	// 						<span className="brand--color">*</span>
-	// 					</label>
-	// 					<select id="dropOffLocation">
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 						<option value="Twingo RS">Twingo RS</option>
-	// 					</select>
-	// 				</div>
-	// 				<div className="booking__form__bloc flex--column">
-	// 					<label htmlFor="pickUpDate">
-	// 						Pick-up date <span className="brand--color">*</span>
-	// 					</label>
-	// 					<input id="pickUpDate" type="date" />
-	// 				</div>
-	// 				<div className="booking__form__bloc flex--column">
-	// 					<label htmlFor="dropOffDate">
-	// 						Drop-off date{" "}
-	// 						<span className="brand--color">*</span>
-	// 					</label>
-	// 					<input id="dropOffDate" type="date" />
-	// 				</div>
-	// 				<button type="button" className="basic-btn">
-	// 					Search
-	// 				</button>
-	// 			</form>
-	// 		</section>
-	// 	</div>
-	// )
+	return (
+		<div className="home-container flex--column">
+			<div className="home__bg-img-container">
+				<img
+					src={heroBackground}
+					alt="A blue blob with a city drawing"
+				/>
+			</div>
+			<Hero />
+			<BookingForm />
+			<section className="plan-section container--padding flex--column">
+				<h3>Plan your trip now</h3>
+				<h2>Quick & easy car rental</h2>
+				<div className="plan flex--center container--padding">
+					<div className="plan__item flex--column">
+						<div className="plan__item__image-container">
+							<img
+								src={selectCarBlob}
+								alt="Logo of a hand holding a car and keys"
+							/>
+						</div>
+						<h3 className="bold-text">Select Car</h3>
+						<p className="description-text">
+							We offers a big range of vehicles for all your
+							driving needs. We have the perfect car to meet your
+							needs
+						</p>
+					</div>
+					<div className="plan__item flex--column">
+						<div className="plan__item__image-container">
+							<img src={operatorBlob} alt="Contact operator" />
+						</div>
+						<h3 className="bold-text">Contact Operator</h3>
+						<p className="description-text">
+							Our knowledgeable and friendly operators are always
+							ready to help with any questions or concerns
+						</p>
+					</div>
+					<div className="plan__item flex--column">
+						<div className="plan__item__image-container">
+							<img src={movingCarBlob} alt="Moving car" />
+						</div>
+						<h3 className="bold-text">Let's Drive</h3>
+						<p className="description-text">
+							Whether you're hitting the open road, we've got you
+							covered with our wide range of cars
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	)
 }
