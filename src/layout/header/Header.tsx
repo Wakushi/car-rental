@@ -1,5 +1,5 @@
 import { useState } from "react"
-import logo from "../../assets/images/car-rental-logo.png"
+import logo from "../../assets/images/logo/car-rental-logo.webp"
 import "./Header.scss"
 
 export default function Header() {

@@ -58,7 +58,7 @@ h4 {
 }
 
 .description-text {
-	color: $light-color;
+	color: $light-color-l1;
 }
 
 .bold-text {
@@ -142,5 +142,45 @@ h4 {
 	@media (width > 450px) {
 		flex-direction: row;
 		width: initial;
+	}
+}
+
+/* 
+====================
+  ANIMATIONS CLASSES
+====================
+*/
+
+.fade-in-top {
+	animation: fade-in-top 1s ease-out;
+}
+
+.fade-in-left {
+	animation: fade-in-left 1s ease-out;
+}
+
+/* 
+====================
+   KEYFRAMES
+====================
+*/
+
+@keyframes fade-in-top {
+	0% {
+		opacity: 0;
+		transform: translateY(-8%);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-8%);
+	}
+	100% {
+		opacity: 1;
 	}
 }

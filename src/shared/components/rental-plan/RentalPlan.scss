@@ -1,0 +1,32 @@
+@import "../../../variables.scss";
+
+.plan-section {
+	padding: 4rem 0;
+	max-width: $max-width;
+	width: 100%;
+	text-align: center;
+
+	.plan {
+		width: 100%;
+		padding: 5rem 0;
+		flex-wrap: wrap;
+		gap: 8rem;
+		.plan__item {
+			text-align: center;
+			max-width: 285px;
+			gap: 1rem;
+			.plan__item__image-container {
+				height: 170px;
+
+				img {
+					filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.315));
+					transition: 1s;
+					&:hover {
+						transform: scale(1.1);
+						filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+					}
+				}
+			}
+		}
+	}
+}
