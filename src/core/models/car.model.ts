@@ -9,4 +9,5 @@ export class Car {
 	transmission!: string
 	fuel!: string
 	imageUrl!: string
+	price!: number
 }

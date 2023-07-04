@@ -1,9 +1,13 @@
 import "./VehiclePicker.scss"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { carData } from "../../../core/service/car.service"
 
 export default function VehiclePicker() {
 	const [displayedVehicle, setDisplayedVehicle] = useState(carData[0])
+
+	useEffect(() => {
+		document.getElementById(carData[0].id)?.classList.add("model-selected")
+	}, [])
 
 	function onSelectVehicle(vehicleId: string): void {
 		applyButtonsStyles(vehicleId)
@@ -60,7 +64,7 @@ export default function VehiclePicker() {
 				<div className="model-picker__details">
 					<div className="model-picker__details__head">
 						{" "}
-						<span className="bold-text">$45</span> / rent per day
+						<span className="bold-text">$ {displayedVehicle.price} </span> / rent per day
 					</div>
 					<div className="model-picker__details_row flex--center">
 						<span>Model</span>

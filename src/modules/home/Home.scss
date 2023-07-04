@@ -2,7 +2,11 @@
 
 .home-container {
 	background-color: $alt-white-color;
-	gap: 8rem;
+	gap: 2rem;
+
+	section {
+		margin-bottom: 7rem;
+	}
 	.home__bg-img-container {
 		width: 700px;
 		position: absolute;
@@ -12,6 +16,59 @@
 
 		@media (width > 800px) {
 			display: block;
+		}
+	}
+
+	.home-banner {
+		background-color: $dark-color-d2;
+		color: white;
+		width: 100%;
+		padding: 2rem 0;
+		gap: 1rem;
+
+		h2 {
+			font-size: 3.25rem;
+		}
+
+		p {
+			font-size: 1.5rem;
+		}
+	}
+
+	.rental-details {
+		width: 100%;
+		background: url("../../assets/images/others/car-tracks-bg.png")
+			no-repeat;
+		gap: 3rem;
+		.image-container {
+			max-width: 1100px;
+		}
+
+		.rental-details__content {
+			max-width: $max-width;
+			width: 100%;
+
+			.rental-details__left {
+				max-width: 500px;
+				align-items: flex-start;
+				gap: 1rem;
+			}
+
+			.rental-details__right {
+				max-width: 440px;
+				gap: 2rem;
+				.rental-details__right__logo {
+					width: 200px;
+					padding: 1.3rem;
+					background-color: $primary-color-light;
+					border-radius: 50%;
+					margin-right: 2rem;
+
+					img {
+						filter: drop-shadow(1px 1px 15px $primary-color);
+					}
+				}
+			}
 		}
 	}
 }

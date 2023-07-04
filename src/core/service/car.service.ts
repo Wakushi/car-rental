@@ -18,7 +18,8 @@ export const carData: Car[] = [
 		ac: true,
 		transmission: "Automatic",
 		fuel: "Diesel",
-		imageUrl: mercedesGLC
+		imageUrl: mercedesGLC,
+		price:70
 	},
 	{
 		id: "2",
@@ -30,7 +31,8 @@ export const carData: Car[] = [
 		ac: true,
 		transmission: "Manual",
 		fuel: "Hybrid",
-		imageUrl: audi
+		imageUrl: audi,
+		price:65
 	},
 	{
 		id: "3",
@@ -42,7 +44,8 @@ export const carData: Car[] = [
 		ac: true,
 		transmission: "Automatic",
 		fuel: "Gasoline",
-		imageUrl: jaguar
+		imageUrl: jaguar,
+		price:43
 	},
 	{
 		id: "4",
@@ -54,7 +57,8 @@ export const carData: Car[] = [
 		ac: false,
 		transmission: "Manual",
 		fuel: "Diesel",
-		imageUrl: audiTT
+		imageUrl: audiTT,
+		price:39
 	},
 	{
 		id: "5",
@@ -66,7 +70,8 @@ export const carData: Car[] = [
 		ac: true,
 		transmission: "Manual",
 		fuel: "Gasoline",
-		imageUrl: rangerRover
+		imageUrl: rangerRover,
+		price:82
 	},
 	{
 		id: "6",
@@ -78,6 +83,7 @@ export const carData: Car[] = [
 		ac: true,
 		transmission: "Automatic",
 		fuel: "Hybrid",
-		imageUrl: volkswagen
+		imageUrl: volkswagen,
+		price:60
 	}
 ]
