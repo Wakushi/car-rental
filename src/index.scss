@@ -29,11 +29,55 @@ li {
 	list-style: none;
 }
 
+* {
+	scrollbar-width: thin;
+	scrollbar-color: $primary-color #ffffff;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+	width: 10px;
+	width: 10px;
+}
+*::-webkit-scrollbar-track {
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:hover {
+	background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:active {
+	background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: $primary-color;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: $primary-color;
+}
+
+*::-webkit-scrollbar-thumb:active {
+	background-color: $secondary-color;
+}
+
 /* 
 ====================
   TYPOGRAPHY
 ====================
 */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: $dark-color-d1;
+}
 
 h1 {
 	font-size: 3.25rem;
@@ -58,12 +102,26 @@ h4 {
 	font-size: 1.375rem;
 }
 
+h5 {
+	font-size: 1.375rem;
+}
 .description-text {
 	color: $light-color-l1;
 }
 
 .bold-text {
 	font-weight: 700;
+}
+
+.big-text {
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+.bigger-text {
+	font-size: 1.375rem;
+	color: $dark-color-d1;
+	font-weight: 500;
 }
 
 /* 

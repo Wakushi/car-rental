@@ -1,0 +1,50 @@
+@import "../../../variables.scss";
+
+.rental-details {
+	width: 100%;
+	background-color: white;
+	background-image: url("../../../assets/images/others/car-tracks-bg.png");
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+	gap: 3rem;
+	padding-top: 12rem;
+	.image-container {
+		max-width: 1100px;
+	}
+
+	.rental-details__content {
+		max-width: $max-width;
+		width: 100%;
+		padding-bottom: 12rem;
+		flex-wrap: wrap;
+		gap: 3rem;
+		text-align: center;
+
+		@media (width > 990px) {
+			align-items: normal;
+			text-align: start;
+		}
+
+		.rental-details__left {
+			max-width: 500px;
+			align-items: flex-start;
+			gap: 1rem;
+		}
+
+		.rental-details__right {
+			max-width: 440px;
+			gap: 2rem;
+			.rental-details__right__logo {
+				width: 200px;
+				padding: 1.3rem;
+				background-color: $primary-color-light;
+				border-radius: 50%;
+				margin-right: 2rem;
+
+				img {
+					filter: drop-shadow(1px 1px 15px $primary-color);
+				}
+			}
+		}
+	}
+}

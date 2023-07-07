@@ -1,0 +1,33 @@
+@import "../../../variables.scss";
+
+.faq {
+	width: 100%;
+	background-color: white;
+	padding: 8rem 0;
+
+	h5,
+	h2,
+	.description-test {
+		max-width: 800px;
+		text-align: center;
+	}
+
+	.description-test {
+		margin-bottom: 2rem;
+	}
+
+	gap: 1rem;
+	.faq-list {
+		position: relative;
+		max-width: 800px;
+		box-shadow: $smooth-shadow;
+		z-index: 2;
+		.faq__img-container {
+			position: absolute;
+			max-width: 800px;
+			left: -100%;
+			top: -100%;
+			z-index: -1;
+		}
+	}
+}

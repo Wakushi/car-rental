@@ -1,0 +1,24 @@
+@import "../../../variables.scss";
+
+.faq-card {
+	.faq-card__question {
+		padding: 1rem 2rem;
+		box-shadow: $smoother-shadow;
+		cursor: pointer;
+
+		.fa-angle-down {
+			transition: transform 500ms;
+		}
+	}
+	.faq-card__answer {
+		display: grid;
+		grid-template-rows: 0fr;
+		transition: grid-template-rows 500ms;
+		div {
+			overflow: hidden;
+			p {
+				padding: 2rem;
+			}
+		}
+	}
+}

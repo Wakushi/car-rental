@@ -2,9 +2,8 @@
 
 .home-container {
 	background-color: $alt-white-color;
-	gap: 2rem;
 
-	section {
+	section:not(.rental-details, .home-banner) {
 		margin-bottom: 7rem;
 	}
 	.home__bg-img-container {
@@ -21,52 +20,43 @@
 
 	.home-banner {
 		background-color: $dark-color-d2;
-		color: white;
+		text-align: center;
+
 		width: 100%;
 		padding: 2rem 0;
 		gap: 1rem;
 
 		h2 {
 			font-size: 3.25rem;
+			color: white;
 		}
 
 		p {
 			font-size: 1.5rem;
+			color: white;
 		}
 	}
 
-	.rental-details {
+	.download {
 		width: 100%;
-		background: url("../../assets/images/others/car-tracks-bg.png")
-			no-repeat;
-		gap: 3rem;
-		.image-container {
-			max-width: 1100px;
-		}
+		padding: 5rem 0;
+		background-image: url("../../assets/images/others/downloadbg.png");
+		background-size: cover;
+		background-position: top;
+		background-repeat: no-repeat;
+		margin-bottom: 0 !important;
 
-		.rental-details__content {
+		.download__container {
 			max-width: $max-width;
 			width: 100%;
-
-			.rental-details__left {
-				max-width: 500px;
-				align-items: flex-start;
-				gap: 1rem;
-			}
-
-			.rental-details__right {
-				max-width: 440px;
+			.download__content {
 				gap: 2rem;
-				.rental-details__right__logo {
-					width: 200px;
-					padding: 1.3rem;
-					background-color: $primary-color-light;
-					border-radius: 50%;
-					margin-right: 2rem;
+				max-width: 550px;
+				align-items: flex-start;
 
-					img {
-						filter: drop-shadow(1px 1px 15px $primary-color);
-					}
+				div {
+					flex-wrap: wrap;
+					gap: 1rem;
 				}
 			}
 		}
